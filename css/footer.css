@@ -21,6 +21,7 @@
 .footer__ico {
     font-size: 1.5rem;
     color: #fff;
+    line-height: 2.5rem;
 }
 
 .footer__networks {
@@ -32,7 +33,10 @@
 
 .fa-brands {
     color: #fff;
+    text-decoration: none;
 }
+
+/****************+ responsive mobile ****************/
 
 @media screen and (max-width: 576px) {
     .footer {
@@ -49,18 +53,47 @@
     }
 
     .footer__copy {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         justify-content: center;
     }
 
     .footer__ico {
         margin-top: 1.463rem;
         font-size: 1.25rem;
+        line-height: 1rem;
     }
 
     .footer__networks {
         font-size: 3.75rem;
         gap: 1.5rem; 
         justify-content: center;      
+        padding-top: 1.5rem;
+    }
+}
+
+/****************+ responsive tablet ****************/
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+    .footer {
+        height: 33.33vh;    
+        margin-top: 2rem;    
+    }
+
+    .footer__container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .footer__copy {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer__networks {
+        justify-content: center;
         padding-top: 1.5rem;
     }
 }

@@ -43,13 +43,10 @@
     color: #333;
 }
 
-@media screen and (max-width: 619px) {
-    .cards {
-        width: 100%;
-        margin: 1.563rem auto;
-    }
+/********************************** tablet responsive *********************************/
 
+@media screen and (min-width: 415px) and (max-width: 939px) {
     .card {
-        flex-basis: 18.75rem;
+        flex-basis: 10.75rem;
     }
 }
