@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filterable Gallery</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Dig Delight Direct Drive DJ</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -20,17 +22,17 @@
     </header>
 
     <main>
-        <section class="section-buttons">
+        <section class="buttons">
             <!-- Filter Buttons  -->
-            <div class="section-buttons__filter">
-                <button class="section-buttons__button active" data-name="all">DJ-LIVE! show all</button>
-                <button class="section-buttons__button" data-name="photon maiden">Photon Maiden</button>
-                <button class="section-buttons__button" data-name="Peaky P-key">Peaky P-key</button>
-                <button class="section-buttons__button" data-name="Happy Around">Happy Around!</button>
+            <div class="buttons__filter">
+                <button class="buttons__button active" data-name="all">DJ-LIVE! show all</button>
+                <button class="buttons__button" data-name="photon maiden">Photon Maiden</button>
+                <button class="buttons__button" data-name="Peaky P-key">Peaky P-key</button>
+                <button class="buttons__button" data-name="Happy Around">Happy Around!</button>
             </div>
         </section>
 
-        <section class="filterable_cards">
+        <section class="cards">
             <!-- Photon Maiden -->
             <div class="card" data-name="photon maiden">
                 <img class="card__img" src="img/photon1.webp" alt="saki">
@@ -120,9 +122,21 @@
                     <p class="card__text">DJ-LIVE!</p>
                 </div>
             </div>
-        </section>
+        </section>       
     </main>
-    <!-- Images Cards -->    
+    <!-- Images Cards -->
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__copy">
+                    <span class="footer__ico">© 2023 All rights reserved by Elmer Alvarez</span>
+                </div>
+                <div class="footer__networks">
+                    <a class="fa-brands fa-github"></a>
+                    <a class="fa-brands fa-linkedin"></a>
+                    <a class="fa-brands fa-facebook"></a>
+                </div>
+            </div>            
+        </footer>
 </body>
 <script src="js/main.js"></script>
 

@@ -1,7 +1,7 @@
 .header {
-    display: flex;
-    align-items: center;
     width: 90%;
+    display: flex;
+    align-items: center;    
     justify-content: space-between;
     margin: 2rem auto 0 auto;
     text-align: center;
@@ -22,11 +22,11 @@
 
 .header__title {
     color: rgb(115, 29, 238);
-    font-size: 4.6rem;
+    font-size: 4rem;
     font-weight: 600;    
 }
 
-/******************************* responsive ******************************/
+/******************************* responsive mobile ******************************/
 
 @media only screen and (max-width: 480px) {
     .header {
@@ -36,10 +36,25 @@
     .header__figure {
         width: 20rem;
         height: 12rem;
-        margin-top: 3rem;
     }
 
     .header__title {
-        padding-top: 3.8rem;
+        padding-top: 1rem;
+    }
+}
+
+/*********************** responsive tablet *****************************************/
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+    .header {
+        flex-direction: column;       
+    }
+
+    .header__figure {
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .header__title {
+        padding-top: 2rem;
     }
 }

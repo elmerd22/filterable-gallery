@@ -1,4 +1,4 @@
-.filterable_cards {
+.cards {
     display: flex;
     margin-top: 1.563rem;
     margin-bottom: 1.563rem;
@@ -41,4 +41,15 @@
 .card__text {
     font-size: 1.125rem;
     color: #333;
+}
+
+@media screen and (max-width: 619px) {
+    .cards {
+        width: 100%;
+        margin: 1.563rem auto;
+    }
+
+    .card {
+        flex-basis: 18.75rem;
+    }
 }
